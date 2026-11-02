@@ -30,7 +30,7 @@ export const products = [
     category: "beds",
     price: 28500,
     badge: "BESTSELLER",
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZPUh86ny_KwL6q1deSUEkmfhtTv1do-y09PEjfB9DQT8ROGxN8S9wegL8&s=10",
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ export const products = [
     category: "beds",
     price: 42000,
     badge: "POPULAR",
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnS4G-j1-TY-EC3mjt9qlOuAUdve6SEWz30igpApMU0g&s=10",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ export const products = [
     category: "beds",
     price: 32000,
     badge: "",
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRorD7WJD4htIdWmgX36uJgmbO9xVKrGEAyewtiMPZEQ&s=10",
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ export const products = [
     category: "beds",
     price: 38500,
     badge: "NEW",
-    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsCcJyyPXg4GPDr3i8xkGFeJQIV5EnnUTVA1wvT2tCQ&s=10",
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ export const products = [
     category: "beds",
     price: 25000,
     badge: "",
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPqbraVoKCwB54lzSp-Gb3l-twZ2xV2donsTacfUPSrQ&s=10",
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ export const products = [
     category: "beds",
     price: 48000,
     badge: "PREMIUM",
-    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjUpDlGdZgSaZzGNpOdZvvhLLI6b8PbXYF99-QEfB-8A&s=10",
   },
 
   // DOORS
@@ -80,7 +80,7 @@ export const products = [
     category: "doors",
     price: 18500,
     badge: "POPULAR",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ItLOmk7CWxoyAQ_dl56XvL6RMzFMV43a02O0rC7HTw&s=10",
   },
   {
     id: 8,
@@ -88,7 +88,7 @@ export const products = [
     category: "doors",
     price: 22000,
     badge: "",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6N9YXUp68X9UcOhsn-VeGIdrU92QTXJNM4D07O-2MYw&s=10",
   },
   {
     id: 9,
