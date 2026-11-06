@@ -16,9 +16,9 @@ export const categories = [
     image: "https://images.unsplash.com/photo-1591129841117-3adfd313e34f?w=900&q=85",
   },
   {
-    id: "living",
-    nameKey: "living",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=85",
+    id: "sofas",
+    nameKey: "sofas",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCcRPqozCucUP2isFnFF-LtdJ_lyb0XpEhj7acJZLXzQ&s=10",
   },
 ];
 
@@ -26,11 +26,11 @@ export const products = [
   // BEDS
   {
     id: 1,
-    name: "Classic Wooden Bed",
-    category: "beds",
-    price: 28500,
+     name: "Modern Living Room Sofa",
+    category: "Sofas",
+    price: 45000,
     badge: "BESTSELLER",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZPUh86ny_KwL6q1deSUEkmfhtTv1do-y09PEjfB9DQT8ROGxN8S9wegL8&s=10",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8wUuVubxUc6yk_Jef8XKOemZRystY1zNU7AVQg1jzQ&s=10",
   },
   {
     id: 2,
@@ -96,7 +96,7 @@ export const products = [
     category: "doors",
     price: 35000,
     badge: "PREMIUM",
-    image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=900&q=85",
+    image: "https://i.pinimg.com/236x/f0/e7/b9/f0e7b9708e51356e4c0bc2f2b92ea395.jpg",
   },
   {
     id: 10,
@@ -104,7 +104,7 @@ export const products = [
     category: "doors",
     price: 26000,
     badge: "",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Xo2yzwvcI9q4GzuociUBuBRsrKXShPENEU9R_1fw1g&s=10",
   },
   {
     id: 11,
@@ -112,7 +112,7 @@ export const products = [
     category: "doors",
     price: 24500,
     badge: "",
-    image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfZhW2vnA-7-yQ4JEiCWU0Al8QeM6d803PAlJHHyVi3Q&s=10",
   },
   {
     id: 12,
@@ -120,7 +120,7 @@ export const products = [
     category: "doors",
     price: 39000,
     badge: "CUSTOM",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJ9MnFwNEQJclDLUE2xovloND1E4-j_HUqqjytqLoXg&s=10",
   },
 
   // BOXES AND STORAGE
@@ -130,7 +130,7 @@ export const products = [
     category: "storage",
     price: 4500,
     badge: "POPULAR",
-    image: "https://images.unsplash.com/photo-1591129841117-3adfd313e34f?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrE0aey3pvip344z7icln-c-vAIt0tEmsmic_d2lVbw&s",
   },
   {
     id: 14,
@@ -138,7 +138,7 @@ export const products = [
     category: "storage",
     price: 7500,
     badge: "",
-    image: "https://images.unsplash.com/photo-1591129841117-3adfd313e34f?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUyDj9Biam0-Y2Xx8qlpNkwfKYnqniA5zCZUl_6iEYA&s",
   },
   {
     id: 15,
@@ -146,7 +146,7 @@ export const products = [
     category: "storage",
     price: 18500,
     badge: "NEW",
-    image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXskyAw40FKjVaZ3pl6YoUxf7q2RqYxSHvA9FiQ197RQ&s=10",
   },
   {
     id: 16,
@@ -154,7 +154,7 @@ export const products = [
     category: "storage",
     price: 12500,
     badge: "",
-    image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXPtAwkuRPC522IS1YvhfsnmegRu3PBD3QmY5ejJrsA&s=10",
   },
   {
     id: 17,
@@ -162,7 +162,7 @@ export const products = [
     category: "storage",
     price: 32000,
     badge: "",
-    image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSED6_qNXLCCMpdVKUo3h0dHT_OJY1Mchp3gMneeNpXZg&s=10",
   },
   {
     id: 18,
@@ -170,56 +170,58 @@ export const products = [
     category: "storage",
     price: 22500,
     badge: "PREMIUM",
-    image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd-aDoxNRHWN1lt5iRbnyyiCYqIHGekpt9nyAHy6LfNQ&s",
   },
 
-  // LIVING ROOM
+  // sofas and living room furniture
+
+   
   {
     id: 19,
-    name: "Modern Living Room Sofa",
-    category: "living",
-    price: 45000,
+    name: "Classic Wooden Bed",
+    category: "beds",
+    price: 28500,
     badge: "BESTSELLER",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZPUh86ny_KwL6q1deSUEkmfhtTv1do-y09PEjfB9DQT8ROGxN8S9wegL8&s=10",
   },
   {
     id: 20,
     name: "Classic Wooden Coffee Table",
-    category: "living",
+    category: "sofas",
     price: 12500,
     badge: "",
-    image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJcTp8XIKX-Yya11kuanPkveqUSH0ZCnxXHEud6bwog&s=10",
   },
   {
     id: 21,
     name: "Luxury Three-Seater Sofa",
-    category: "living",
+    category: "sofas",
     price: 55000,
     badge: "PREMIUM",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOU5tKsCFhhVgDpl3BR8uOeKZyGzHkiOp6v9SbMHzARw&s=10",
   },
   {
     id: 22,
     name: "Wooden Dining Table",
-    category: "living",
+    category: "sofas",
     price: 28500,
     badge: "",
-    image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5DOaSkC1SEJD0f6p4iPeUCn4UL_ftA-kIpwnzlMQr2w&s=10",
   },
   {
     id: 23,
     name: "Modern Accent Chair",
-    category: "living",
+    category: "sofas",
     price: 14500,
     badge: "NEW",
-    image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWVGEky_For8xCt7bDqfrpM6lRDTDVQXD2FLNmBQ6t6w&s=10",
   },
   {
     id: 24,
     name: "Premium TV Stand",
-    category: "living",
+    category: "sofas",
     price: 18000,
     badge: "",
-    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=900&q=85",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyaeXHy6g4ipi4HNSWzfEqihSlHn2fdLsmO2sYzcMvNQ&s=10",
   },
 ];

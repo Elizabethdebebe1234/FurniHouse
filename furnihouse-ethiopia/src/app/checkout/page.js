@@ -4,6 +4,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
+import { useAuth } from "@/components/AuthProvider";
 import {
   CalendarDays,
   Clock,
@@ -238,7 +239,9 @@ function formatETB(amount) {
 
 export default function CheckoutPage() {
   const { language } = useLanguage();
+  const { user, ready } = useAuth();
   const t = (key) => translations[language]?.[key] || translations.en[key] || key;
+  
 
   const [cart, setCart] = useState([]);
   const [today, setToday] = useState("");
@@ -289,6 +292,11 @@ export default function CheckoutPage() {
     event.preventDefault();
     setError("");
 
+    if (!ready || !user || user.role !== "customer") {
+  setError("Please sign in to your customer account before placing an order.");
+  return;
+}
+
     if (!cart.length) return;
     if (!name.trim() || !email.trim() || !phone.trim() || !date || !time) {
       setError(t("required"));
@@ -314,10 +322,10 @@ export default function CheckoutPage() {
         id: reference,
         reference,
         customer: {
-          name: name.trim(),
-          email: email.trim(),
-          phone: phone.trim(),
-        },
+  name: name.trim(),
+  email: email.trim().toLowerCase(),
+  phone: phone.trim(),
+},
         items: cart.map((item) => ({
           id: item.id,
           name: item.name,
@@ -455,7 +463,7 @@ export default function CheckoutPage() {
 
           <div className="flex flex-col justify-center gap-3 sm:flex-row">
             <Link
-              href="/customer"
+              href="/account"
               className="rounded-xl bg-[#173D2E] px-6 py-3 font-semibold text-white transition hover:bg-[#102B21]"
             >
               {t("viewDashboard")}

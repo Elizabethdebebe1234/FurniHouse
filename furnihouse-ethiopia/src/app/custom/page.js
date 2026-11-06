@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useAuth } from "@/components/AuthProvider";
 import {
   ArrowLeft,
   ArrowRight,
@@ -272,6 +273,7 @@ const designOptions = [
 
 export default function CustomFurniturePage() {
   const { language } = useLanguage();
+  const { user, ready } = useAuth();
   const t = (key) => translations[language]?.[key] || translations.en[key] || key;
 
   const [style, setStyle] = useState("modern");
@@ -319,16 +321,22 @@ export default function CustomFurniturePage() {
     setError("");
     setSubmitting(true);
 
+    if (!ready || !user || user.role !== "customer") {
+  setError("Please sign in to your customer account before submitting a custom design.");
+  setSubmitting(false);
+  return;
+}
+
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    const email = String(formData.get("email") || "").trim();
+   const email = user?.email?.trim().toLowerCase() || "";
 
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      setError(t("invalidEmail"));
-      setSubmitting(false);
-      return;
-    }
+if (!email) {
+  setError("Your account email could not be found. Please sign in again.");
+  setSubmitting(false);
+  return;
+}
 
     try {
       const requestId =
@@ -336,11 +344,11 @@ export default function CustomFurniturePage() {
 
       const request = {
         id: requestId,
-        customer: {
-          name: String(formData.get("name") || "").trim(),
-          email,
-          phone: String(formData.get("phone") || "").trim(),
-        },
+       customer: {
+  name: user.name,
+  email: user.email.trim().toLowerCase(),
+  phone: String(formData.get("phone") || "").trim(),
+},
         design: {
           style,
           furnitureType: formData.get("furnitureType"),
